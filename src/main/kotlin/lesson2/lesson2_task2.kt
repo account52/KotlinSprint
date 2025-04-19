@@ -4,7 +4,6 @@ fun main() {
 
     val salaryEmployee = 30000
     val salaryIntern = 20000
-
     val countEmployees = 50
     val countInterns = 30
 
