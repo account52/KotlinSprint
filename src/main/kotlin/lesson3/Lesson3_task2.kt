@@ -2,16 +2,16 @@ package lesson3
 
 fun main() {
 
-    val fistAge = 20
-    val secondAge = 22
-
+    var age = 20
     val name = "Татьяна"
     val patronymic = "Сергеевна"
+    var surname = "Андреева"
 
-    val firstSurname = "Андреева"
-    val secondSurname = "Сидорова"
+    println("$surname $name $patronymic, $age")
 
-    println("$firstSurname $name $patronymic, $fistAge")
-    println("$secondSurname $name $patronymic, $secondAge")
+    age = 22
+    surname = "Сидорова"
+
+    println("$surname $name $patronymic, $age")
 
 }
