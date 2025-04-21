@@ -1,6 +1,6 @@
 package lesson3
 
-fun main(){
+fun main() {
 
     val number = 5
     val result = """
