@@ -4,12 +4,8 @@ fun main() {
 
     val str = "D2-D4;0"
 
-    val contains = str.contains("-")
-
-    if (contains) {
-        val newStr = str.replace("-", ";")
-        val listStr = newStr.split(";")
-
+    val listStr = str.split("-", ";")
+    if (listStr.count() == 3) {
         val stepFrom = listStr[0]
         val stepTo = listStr[1]
         val stepNumber = listStr[2]
@@ -17,8 +13,8 @@ fun main() {
         println(stepFrom)
         println(stepTo)
         println(stepNumber)
-
     } else {
-        println("Неверный формат!")
+        println("Неверный формат входящих данных!")
     }
+
 }
