@@ -12,7 +12,7 @@ fun main() {
 
     when {
         bodyIndex < LOWER_LIMIT -> println("Недостаточная масса тела")
-        bodyIndex >= LOWER_LIMIT && bodyIndex < TRANSITIONAL_LIMIT -> println("Нормальная масса тела")
+        bodyIndex < TRANSITIONAL_LIMIT -> println("Нормальная масса тела")
         bodyIndex < UPPER_LIMIT -> println("Избыточная масса тела")
         else -> println("Ожирение")
     }
